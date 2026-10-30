@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # HotelTask
 
 HotelTask is a Laravel and MySQL task management application for multiple hotel properties. The API uses Laravel Sanctum bearer tokens; property, department, role, approval, task, and report access is checked on the server.
@@ -61,3 +62,6 @@ npm run build
 ```
 
 The dashboard refreshes task analytics every 30 seconds. This is periodic polling, not a WebSocket push connection.
+=======
+# hoteltaskmanager
+>>>>>>> 4ed1364cfa2f44b0a5ffb8163b97f11e401f3c66
