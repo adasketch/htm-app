@@ -1,0 +1,113 @@
+@import 'tailwindcss';
+
+@custom-variant dark (&:where(.dark, .dark *));
+
+@source '../../vendor/laravel/framework/src/Illuminate/Pagination/resources/views/*.blade.php';
+@source '../../storage/framework/views/*.php';
+
+@theme {
+    --font-sans: 'Instrument Sans', ui-sans-serif, system-ui, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji',
+        'Segoe UI Symbol', 'Noto Color Emoji';
+}
+
+@media (min-width: 1024px) {
+    html.sidebar-collapsed #app-sidebar {
+        transform: translateX(-100%);
+    }
+
+    html.sidebar-collapsed [data-app-content] {
+        padding-left: 0;
+    }
+}
+
+html.dark {
+    color-scheme: dark;
+}
+
+html.dark body {
+    background-color: #0f172a;
+    color: #e2e8f0;
+}
+
+html.dark [class~="bg-white"],
+html.dark [class~="bg-slate-50"],
+html.dark [class~="bg-slate-100"],
+html.dark [class~="bg-[#f4f6f8]"] {
+    background-color: #111c2f;
+}
+
+html.dark [class~="bg-emerald-50"] {
+    background-color: #102b27;
+}
+
+html.dark [class~="bg-emerald-100"] {
+    background-color: #17443a;
+}
+
+html.dark [class~="bg-rose-50"] {
+    background-color: #351c27;
+}
+
+html.dark [class~="bg-amber-50"] {
+    background-color: #352b17;
+}
+
+html.dark [class~="text-slate-900"] {
+    color: #f1f5f9;
+}
+
+html.dark [class~="text-slate-800"],
+html.dark [class~="text-slate-700"],
+html.dark [class~="text-slate-600"] {
+    color: #cbd5e1;
+}
+
+html.dark [class~="text-slate-500"],
+html.dark [class~="text-slate-400"] {
+    color: #94a3b8;
+}
+
+html.dark [class~="text-emerald-900"],
+html.dark [class~="text-emerald-950"] {
+    color: #a7f3d0;
+}
+
+html.dark [class~="text-emerald-800"] {
+    color: #6ee7b7;
+}
+
+html.dark [class~="text-rose-800"],
+html.dark [class~="text-rose-700"] {
+    color: #fda4af;
+}
+
+html.dark [class~="text-amber-950"] {
+    color: #fde68a;
+}
+
+html.dark [class~="border-slate-100"],
+html.dark [class~="border-slate-200"],
+html.dark [class~="border-slate-300"],
+html.dark [class~="border-emerald-200"],
+html.dark [class~="border-rose-200"],
+html.dark [class~="border-amber-200"] {
+    border-color: #334155;
+}
+
+html.dark [class~="hover:bg-slate-50"]:hover,
+html.dark [class~="hover:bg-slate-100"]:hover {
+    background-color: #1e293b;
+}
+
+html.dark input:not([type="checkbox"]):not([type="radio"]),
+html.dark select,
+html.dark textarea {
+    border-color: #475569;
+    background-color: #111c2f;
+    color: #e2e8f0;
+}
+
+html.dark input::placeholder,
+html.dark textarea::placeholder {
+    color: #94a3b8;
+}
